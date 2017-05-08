@@ -1,12 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+    <Authors>Dmitry Sikorsky</Authors>
     <TargetFramework>netstandard1.6</TargetFramework>
-    <AssemblyName>Extension.Data.EntityFramework.Sqlite</AssemblyName>
-    <PackageId>Extension.Data.EntityFramework.Sqlite</PackageId>
-    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
-    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
-    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
   </PropertyGroup>
 
   <ItemGroup>
@@ -14,7 +10,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="ExtCore.Data.EntityFramework.Sqlite" Version="1.1.3" />
+    <PackageReference Include="ExtCore.Data.EntityFramework.Sqlite" Version="1.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
   </ItemGroup>
 
 </Project>
