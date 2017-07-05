@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26403.7
+VisualStudioVersion = 15.0.26430.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{2FE680E8-878C-4FF3-80FC-4241411518C6}"
 EndProject
@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication", "src\WebAp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Extension", "src\Extension\Extension.csproj", "{A0DCD8BA-F8C0-454A-B081-0EF2BCE9ACFB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Extension.Data.Models", "src\Extension.Data.Models\Extension.Data.Models.csproj", "{D79D8662-5C14-4E74-A8C0-F70748A9D97C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Extension.Data.Entities", "src\Extension.Data.Entities\Extension.Data.Entities.csproj", "{D79D8662-5C14-4E74-A8C0-F70748A9D97C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Extension.Data.EntityFramework.Sqlite", "src\Extension.Data.EntityFramework.Sqlite\Extension.Data.EntityFramework.Sqlite.csproj", "{188FC351-3DE0-4B93-BCD9-B19E11FD1E53}"
 EndProject

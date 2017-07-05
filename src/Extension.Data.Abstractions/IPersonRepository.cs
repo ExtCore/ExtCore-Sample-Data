@@ -3,7 +3,7 @@
 
 using System.Collections.Generic;
 using ExtCore.Data.Abstractions;
-using Extension.Data.Models;
+using Extension.Data.Entities;
 
 namespace Extension.Data.Abstractions
 {
