@@ -12,17 +12,13 @@ namespace WebApplication
 {
   public class Startup
   {
-    private IConfigurationRoot configurationRoot;
+    private readonly IConfiguration configuration;
     private string extensionsPath;
 
-    public Startup(IHostingEnvironment hostingEnvironment)
+    public Startup(IHostingEnvironment hostingEnvironment, IConfiguration configuration)
     {
-      IConfigurationBuilder configurationBuilder = new ConfigurationBuilder()
-        .SetBasePath(hostingEnvironment.ContentRootPath)
-        .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
-
-      this.configurationRoot = configurationBuilder.Build();
-      this.extensionsPath = hostingEnvironment.ContentRootPath + this.configurationRoot["Extensions:Path"];
+      this.configuration = configuration;
+      this.extensionsPath = hostingEnvironment.ContentRootPath + this.configuration["Extensions:Path"];
     }
 
     public void ConfigureServices(IServiceCollection services)
@@ -30,7 +26,7 @@ namespace WebApplication
       services.AddExtCore(this.extensionsPath);
       services.Configure<StorageContextOptions>(options =>
         {
-          options.ConnectionString = this.configurationRoot.GetConnectionString("Default");
+          options.ConnectionString = this.configuration.GetConnectionString("Default");
         }
       );
     }
